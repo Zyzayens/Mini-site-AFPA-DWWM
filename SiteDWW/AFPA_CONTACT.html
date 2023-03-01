@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<HTML lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="contact_AFPA" name="contact_AFPA">
+        <title>Contact Afpa</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+<body>
+    <header>
+        <nav class="navBar">    <!-- Navbar -->
+            <img src="Images/DeclinaisonsLogoAfpa_2.png" alt="logo" title="logo_afpa" id="logo_afpa">
+            <ul class="nav_link">
+                <li><a href="INDEX_AFPA.html" class="nav_link"><img src="Images/favicon.ico" alt="icon afpa"> Accueil</a></li>
+                <li><a href="AFPA_DWWM.html" class="nav_link"><img src="Images/favicon.ico" alt="icon afpa"> Notre formation DWWM</a></li>
+                <li><a href="AFPA_CONTACT.html" class="nav_link"><img src="Images/favicon.ico" alt="icon afpa"> Nous contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main class="body_container" id="contact">    <!-- conteneur du corps de la page en grid-->
+     
+        <div class="conteneur_postit_alt" id="questionnaire_postit"> <!-- post it du form  -->
+            <div class="haut_postit"></div>
+        <form name="contact_form" target="_blank" id="questionnaire">  <!-- form -->
+
+            <div class="form_content">   <!-- div des text -->
+                    <label><strong>Nom :</strong><br>
+                        <input type="text" placeholder ="Nom" autocomplete="name" name="name" required>
+                    </label>
+
+                    <label><strong>email :</strong><br>
+                        <input type="email" placeholder ="********@******.*****"  name="email" autocomplete="email" required>
+                    </label>
+
+                    <label><strong>téléphone :</strong><br>
+                        <input type="tel" placeholder ="**********" name="telephone" autocomplete="tel">
+                    </label>
+            </div>
+
+            <div class="form_content">   <!-- div des radio -->
+                <strong>Vous êtes :</strong><br>
+                    <label>
+                        <input type="radio" name="situation_pro" value="demandeur" id="pro1" checked>
+                        demandeur d'emploi
+                    </label>
+
+                    <label>
+                        <input type="radio" name="situation_pro" value="salarié" id="pro2">
+                        Salarié en transition professionnelle
+                    </label>
+
+                    <label>
+                        <input type="radio" name="situation_pro" value="autre" id="pro3">
+                        autre
+                    </label>   
+            </div>
+
+            <div class="form_content">   <!-- div des checkbox -->
+                <p><strong>modalité d'enseignement privilégiée :</strong></p>
+                        <label>
+                            <input type="checkbox" id="modalite1" name="modalite_enseignement" value="centre">
+                            En centre de formation
+                        </label>
+
+                        <label>
+                            <input type="checkbox" id="modalite2" name="modalite_enseignement" value="distance">
+                            A distance
+                        </label>
+
+                        <label>
+                            <input type="checkbox" id="modalite3" name="modalite_enseignement" value="alternance">
+                            En alternance avec l'entreprise
+                        </label>
+
+                        <label>
+                            <input type="checkbox" id="modalite4" name="modalite_enseignement" value="none">
+                            Sans préférance
+                        </label>
+            </div>
+            
+            <div class="form_content">   <!-- div du select -->
+                <label for="region"> Région :</label>
+                <select name="region" id="region">
+                    <option value="non_renseigne" selected>Région</option>
+                    <option value="auvergne_rhone_alpe">Auvergne-Rhône-Alpes</option>
+                    <option value="bourgogne_franche_comte">Bourgogne-Franche-Comté</option>
+                    <option value="centre_val_de_loire">Centre-Val de Loire</option>
+                    <option value="corse">Corse</option>
+                    <option value="grand_est">Grand Est</option>
+                    <option value="ile_de_france">Île-de-France</option>
+                    <option value="normandie">Normandie</option>
+                    <option value="nouvelle_aquitaine">Nouvelle-Aquitaine</option>
+                    <option value="occitanie">Occitanie</option>
+                    <option value="pays_de_loire">Pays de la Loire</option>
+                    <option value="provence_alpe_cote_azure">Provence-Alpes-Côte d'Azur</option>
+                    <option value="bretagne">Bretagne</option>
+                    <option value="haut_de_france">Hauts-de-France</option>
+                    <option value="DOMTOM">DOMTOM</option>                    
+                </select>
+
+            </div>
+
+            <div class="form_content">   <!-- div du submit button -->
+                <button type="submit" id="button_form">Envoyer</button>
+            </div>
+
+        </form>
+        </div>
+
+        <div class="conteneur_postit" id="echanges">  <!-- post it du contact conseiller -->
+            <div class="haut_postit"></div>
+                <h1>Besoin d'échanger avec un conseiller sur votre projet ?</h1>
+                <p>Appelez-nous au 3936 ou au + 33 1 83 82 01 88 ( hors France) Ouvert  du lundi au vendredi de 8 h à 18 h Pour éviter une attente trop longue, nous vous conseillons d'appeler aux horaires de faible affluence. Attention il peut y avoir jusqu’à 3 minutes d’attente.</p>
+        </div>
+
+        <div class="conteneur_postit" id="question">  <!-- post it "questions ?" -->
+            <div class="haut_postit"></div>
+                <h1>Vous avez une question ?</h1>
+                <p>Pour toutes questions sur l'Afpa, nos formations, nos modalités d'inscription …<br> N'hésitez pas à aller visiter notre espace Foire aux questions.</p>
+        </div>  
+              
+        <div class="conteneur_postit" id="reclamation">  <!-- post it "reclamation ?" -->
+            <div class="haut_postit"></div>  
+                <h1>Une réclamation</h1>
+                <p>Si vous souhaitez nous faire part d'une réclamation, nous vous invitons à remplir et nous soumettre ce formulaire. À réception de votre réclamation, l’Afpa revient vers vous dans un délai de 10 jours ouvrés et vous tient informés des actions complémentaires qu’elle met en œuvre.</p>
+        </div>
+
+    </main>
+</body>
+</HTML>
